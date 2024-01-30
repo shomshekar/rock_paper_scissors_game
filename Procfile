@@ -1,0 +1,1 @@
+web: gunicorn rock_paper_scissors_game.wsgi --log-file -
