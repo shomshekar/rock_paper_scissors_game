@@ -1,0 +1,24 @@
+Program Analysis Report
+
+Rules for the game are as follows:-
+- Rock smashes scissors.
+- Paper covers rock.
+- Scissors cut paper.
+
+- A List is created and three values are stored rock, paper and scissors
+- When user begins he enters his firstname and lastname.
+- Then in next page (game-page) is where the user is asked to select any one from dropdown, Rock is selected by default.
+- On submitting his selection the computer randomly selects one of the items from List.
+- Then a comparsion is done to check both user and computer selected items.
+- Based on Rules winner or tie is decided and appropriate message is shown to user.
+- User is given the option to play again or he can go to result-page to check all the results.
+- If User decides to play, he is again given the option to select in dropdown. 
+- On submitting the process follows as described earlier.
+
+
+
+Report on Challenges faced
+
+- The challenge was more on passing the values, i.e i did not want the user to directly access the 2nd page directly unless he gives his first and last name. So i created slug for each user that is unique.
+- The slug is used in url to access the 2nd page game-page, thus limiting the direct access to some extend. 
+- I needed to add some css to form fields, as the form fields where in forms.py, so had to do bit of search to add those class and styles in forms.py. I added in __init__ function of form class

@@ -1,3 +1,9 @@
+
+Rules for the game are as follows:-
+- Rock smashes scissors.
+- Paper covers rock.
+- Scissors cut paper.
+
 - Home page Ask for user name
 - Then take the user to game page.
 - The game page will show user name, show buttons to select
