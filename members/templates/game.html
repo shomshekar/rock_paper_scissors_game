@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4 style="text-align:center; color:red;" >Select your choice on click of button </h4>
+        <div style="text-align: center;">
+            Hi {{ member.firstname }} {{ member.lastname }}
+        </div>
+        <br>
+        {% if message %}
+        <div style="text-align: center;">
+            <p>{{ message }}</p>
+            <p><a href="/view-game/{{ member.slug }}" class="btn btn-secondary">Play Again</a></p>
+            <p><a href="/result-page" class="btn btn-secondary">Check All Results</a></p>
+        </div>
+        <br>
+        {% else %}
+        <div style="text-align: center;">
+            <!-- <form method="POST" action="get_result/{{ member.slug }}"> -->
+            <form method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" value="Submit">
+                <a href="/" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+        {% endif %}
+        
+    </body>
+</html>

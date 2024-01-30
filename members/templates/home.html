@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4 style="text-align:center; color:red;" >To play Rock, paper and Sciccers game enter your name</h4>
+        <div style="text-align: center;">
+            <form method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" value="Submit">
+                <a href="/result-page" class="btn btn-secondary">Check All Results</a>
+            </form>
+        </div>
+    </body>
+</html>

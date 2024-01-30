@@ -1,0 +1,21 @@
+- Home page Ask for user name
+- Then take the user to game page.
+- The game page will show user name, show buttons to select
+- On click of buttons we will check if user wins or loses
+- Depending on result message will get printed 
+- To play again he can click on another button, and then again we will check if user wins or loses and then message is shown.
+- Ever game played the selection of user and computer and result will be saved in DB
+- This will continue till the users decides to end game.
+
+Tables to be used:
+-> members
+    - id
+    - firstname
+    - lastname
+-> gameResult
+    - id
+    - member_id (foreign key) 
+    - member_selection
+    - computer_seection
+    - result
+    - created_datetime

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+    <body>
+        <h4 style="text-align:center; color:red;" >Results for Rock, Paper & Sciccers Game </h4>
+        <div style="text-align: center;">
+            {% if all_result %}
+            <table>
+                <tr>
+                  <th>User</th>
+                  <th>User Choice</th>
+                  <th>Computer Choice</th>
+                  <th>Winner</th>
+                </tr>
+                {% for result in all_result %}
+                <tr>
+                    <td>{{ result.member_id.firstname }} {{ result.member_id.lastname }}</td>
+                    <td>{{ result.member_selection }}</td>
+                    <td>{{ result.computer_selection }}</td>
+                    <td>{{ result.result }}</td>
+                </tr>
+                {% endfor %}
+              </table> 
+              {% else %}
+                <p> No one has payed yet. Be First to <a href="/">Play Game</a></p>
+              {% endif %}
+
+        </div>
+    </body>
+</html>
