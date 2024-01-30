@@ -10,6 +10,7 @@ import random
 choice_list = ['rock', 'paper', 'sciccers']
 
 def winner(user_action, computer_action):
+    data = {}
     if user_action == computer_action:
         data = {
             'winner' : 'Tie',
