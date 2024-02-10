@@ -7,7 +7,7 @@ from . import forms
 from .models import Members, GameResult
 import random
 
-choice_list = ['rock', 'paper', 'sciccers']
+choice_list = ['rock', 'paper', 'scissors']
 
 def winner(user_action, computer_action):
     data = {}

@@ -14,7 +14,7 @@ class FormName(forms.Form):
 
 
 class FormSelect(forms.Form):
-    CHOICES = (('rock', 'Rock'),('paper', 'Paper'),('sciccers', 'Sciccers'),)
+    CHOICES = (('rock', 'Rock'),('paper', 'Paper'),('scissors', 'Scissors'),)
     choice = forms.ChoiceField(choices=CHOICES)
 
     def __init__(self, *args, **kwargs):
